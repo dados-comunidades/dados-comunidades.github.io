@@ -1,0 +1,15 @@
+<div class="row">
+	<input id="input-filter" type="text" #filterInput (keyup)="0" placeholder="Search...">
+</div>
+<div class="row contacts">
+	<div *ngFor="let contact of contactList | fileNamePipe:filterInput.value; let i = index" class="col col-3 card-block">
+		<img src="http://placehold.it/100x100"  alt="..." id="bio-pic" class="img-thumbnail img-fluid"> <br />
+		<p>
+			<strong>name:</strong> {{ contact.name }} 
+		</p>
+		<p>
+			<strong>email:</strong> {{ contact.email }}
+		</p>
+	</div>
+
+</div>

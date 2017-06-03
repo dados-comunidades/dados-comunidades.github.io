@@ -1,0 +1,14 @@
+* {
+ text-align:center;
+}
+.sign-in__heading{
+ padding: 20px
+}
+.container{
+    z-index:1000;
+    background-color: white;
+    height:100%;
+    width:100%;
+    position: absolute;
+    margin-top: -20px;
+}

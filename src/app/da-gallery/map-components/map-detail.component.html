@@ -1,0 +1,18 @@
+<div class="card-block" >
+    <h3 class="card-title">{{ currentMap?.mapTitle }}
+        <span class="badge badge-success">
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+            {{ currentMap?.mapVotes }}</span>
+    </h3>
+    <p><strong>Author: </strong>{{ currentMap?.mapAuthor }}</p>
+    <p><strong>Created: </strong>{{ currentMap?.dateCreated | date }}</p>
+    <p><strong>About: </strong></p>
+    <p class="card-text">{{ currentMap?.mapDesc }}</p>
+    <p>{{ currentMap?.mapTags }}
+
+    </p>
+    <br />
+    <button class="btn btn-sm btn-outline-primary" (click)="viewMap()">View</button>
+    <button class="btn btn-sm btn-outline-info" (click)="editMapDetails()">Edit</button>
+    <button class="btn btn-sm btn-outline-danger" (click)="onCancel()">Go Back</button>
+</div>
