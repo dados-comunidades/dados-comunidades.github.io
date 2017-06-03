@@ -168,7 +168,7 @@ var MapService = (function () {
     //       .catch(this.handleError);
     // }
     MapService.prototype.addHelio = function () {
-        return this.http.get('https://dados-comunidades.github.io/dist/assets/heliopolis_w_att.geojson')
+        return this.http.get('https://raw.githubusercontent.com/dados-comunidades/dados-comunidades.github.io/master/dist/assets/heliopolis_w_att.geojson')
             .map(function (response) { return response.json(); })
             .catch(this.handleError);
     };
